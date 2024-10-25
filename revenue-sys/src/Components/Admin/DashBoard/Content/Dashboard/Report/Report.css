@@ -1,0 +1,3 @@
+.report-container input{
+    @apply border p-2 rounded-md w-full mb-2;
+}
