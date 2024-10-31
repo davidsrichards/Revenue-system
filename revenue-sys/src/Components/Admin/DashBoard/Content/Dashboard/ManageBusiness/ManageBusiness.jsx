@@ -66,7 +66,7 @@ function ManageBusiness() {
                       <td className='border-b-2 px-4'>{id}</td>
                       <td className='border-b-2 px-4'>{name}</td>
                       <td className='border-b-2 px-4'>{address}</td>
-                      <td className='border-b-2  cursor-pointer'><IoSettingsSharp onClick={() => controlPopUp()}/></td>
+                      <td className='border-b-2  cursor-pointer px-4'><IoSettingsSharp onClick={() => controlPopUp()}/></td>
                             </tr>
                         ))}
                    

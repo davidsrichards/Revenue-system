@@ -6,7 +6,8 @@ import { CgMenuGridO } from "react-icons/cg";
 import { MdAccessTime } from "react-icons/md";
 import { FaUserPlus } from "react-icons/fa";
 import { IoIosSettings } from "react-icons/io";
-import { FaMobile } from "react-icons/fa";
+import {IoMdLogOut} from "react-icons/io";
+import { FaMobile} from "react-icons/fa";
 import GlobalSidebar from "../../GlobalComponent/GlobalSidebar";
 
 function Sidebar() {
@@ -25,6 +26,7 @@ function Sidebar() {
         <GlobalSidebar icon={<MdAccessTime />} title={"Manage Users"} to={"/admin-dashboard/manage-user"} />
         <GlobalSidebar icon={<IoIosSettings />} title={"Manage Businesses"} to={"/admin-dashboard/manage-business"}/>
         <GlobalSidebar icon={<FaUserPlus />} title={"Profile"} />
+        <GlobalSidebar icon={<IoMdLogOut  />} title={"Log Out"} to={'/'}/>
       </ul>
     </div>
   );

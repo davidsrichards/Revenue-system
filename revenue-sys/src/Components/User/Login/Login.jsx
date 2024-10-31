@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import Spinner from '../../Admin/GlobalComponent/Animation/Spinner';
-import { Link } from 'react-router-dom';
+import  '../../Admin/GlobalComponent/Animation/Animation.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { PrimaryButton } from '../../Admin/DashBoard/Content/Dashboard/Button/Button';
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate()
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -49,13 +54,14 @@ const LoginPage = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
+            onClick={() => navigate('/user-dashboard')}
               type="submit"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               disabled={loading}
             >
               {loading ? <Spinner /> : 'Login'}
             </button>
-            <Link to={'/admin-login'} className='italic underline underline-offset-2'>Admin</Link>
+            <PrimaryButton to={"/admin-login'"} title={"Admin"}/>
           </div>
         </form>
       </div>

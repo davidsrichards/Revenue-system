@@ -13,6 +13,7 @@ function Navbar() {
         alt=""
         className="nav-img absolute left-4 md:block hidden"
       />
+      {/* <h2 className="nav-img absolute left-4 md:block hidden font-bold">Admin</h2> */}
       <div className="md:hidden block absolute left-4 hover:bg-[#e8eff9] p-2 rounded-full cursor-pointer">
         <GiHamburgerMenu />
       </div>

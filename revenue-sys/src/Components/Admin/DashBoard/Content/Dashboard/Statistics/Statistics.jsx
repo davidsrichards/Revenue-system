@@ -5,7 +5,7 @@ import Chart from "../Charts/Chart";
 function Statistics() {
   return (
     <div className="flex-1">
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 flex-1">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
         <GlobalStatistics
           title={"Water Revenue"}
           amount={"30000"}
